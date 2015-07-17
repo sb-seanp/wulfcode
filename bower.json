@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "semantic-ui": "~2.0.2"
+    "semantic-ui": "~2.0.2",
+    "bootstrap": "~3.3.5",
+    "bootswatch-dist": "3.3.0-flatly"
   }
 }

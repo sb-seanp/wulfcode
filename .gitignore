@@ -1,7 +1,7 @@
 # User rules
 *.html
 *.css
-public/components
+public
 
 # Created by .ignore support plugin (hsz.mobi)
 

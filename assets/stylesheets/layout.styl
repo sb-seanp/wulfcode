@@ -1,4 +1,4 @@
-@import colours
+@import config
 
 /**
   GLOBAL
@@ -9,22 +9,48 @@ html
 body
   height inherit
   margin-bottom 40px
-.transparent
-  background transparent
+a
+  font-size 1em
+.scroll-top
+  background transparent!important
+  padding-bottom 5px!important
+  border-bottom 1px solid white!important
 /**
   HEADER
 */
 nav
-  background white
+  //background white
   transition all 0.4s ease
+  a
+    font-size 1.05em
+.navbar-default
+  background primary
+  border-bottom 1px solid pink
+  padding-bottom 0
+  .navbar-nav > li > a
+    color white
+    &:hover
+      color secondary
 /**
   CONTENT
 */
-#hero
+#home
   //position absolute
   height 100%
   width 100%
-#hero-image
+#hero-quote
+  position absolute
+  margin 0 auto
+  width 100%
+  text-align center
+  top 50%
+  color white
+  h1
+    font-family 'Amatic SC', cursive
+    font-size 4em
+  h4
+    font-family Merriweather, sans-serif
+#hero
   background-image url(../images/hero_wolf_bw.jpg)
   background-position center
   background-size cover

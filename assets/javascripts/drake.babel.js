@@ -8,14 +8,14 @@ import $w from './alias.babel.js';
  * @param {string} nav_id - Id of the nav element you want to apply effects to.
  */
 export default function drake(nav_id) {
-  $w.id(nav_id).classList.add('transparent');
+  $w.id(nav_id).classList.add('scroll-top');
   window.onscroll = (function () {
     let nav = $w.id(nav_id);
-    if (document.body.scrollTop === 0 && !nav.classList.contains('transparent')) {
-      nav.classList.add('transparent');
+    if (document.body.scrollTop === 0 && !nav.classList.contains('scroll-top')) {
+      nav.classList.add('scroll-top');
     }
-    else if (nav.classList.contains('transparent')) {
-      nav.classList.remove('transparent');
+    else if (nav.classList.contains('scroll-top')) {
+      nav.classList.remove('scroll-top');
     }
   });
 }

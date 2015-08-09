@@ -16,9 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "semantic-ui": "~2.0.2",
     "bootstrap": "~3.3.5",
     "bootswatch-dist": "3.3.0-flatly",
-    "animate.css": "~3.3.0"
+    "animate.css": "~3.3.0",
+    "highlight.js": "https://github.com/isagalaev/highlight.js.git#8.6"
   }
 }

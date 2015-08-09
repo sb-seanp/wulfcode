@@ -5,3 +5,4 @@ import drake from './drake.babel.js';
 
 
 drake('header-nav');
+hljs.initHighlightingOnLoad();

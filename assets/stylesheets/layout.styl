@@ -1,4 +1,5 @@
 @import config
+@import mixins
 
 /**
   GLOBAL
@@ -15,6 +16,8 @@ a
   background transparent!important
   padding-bottom 5px!important
   border-bottom 1px solid white!important
+.btn-primary
+  background-color secondary
 /**
   HEADER
 */
@@ -29,11 +32,23 @@ nav
   padding-bottom 0
   .navbar-nav > li > a
     color white
+    font-family Merriweather, sans-serif
+    &:hover
+      color secondary
+  .navbar-brand
+    font-family 'Amatic SC', cursive
+    font-size 3em
+    color white
     &:hover
       color secondary
 /**
   CONTENT
 */
+pre
+  background-color transparent
+  border-color secondary
+  width 50%
+  margin 0 auto
 #home
   //position absolute
   height 100%
@@ -56,10 +71,26 @@ nav
   background-size cover
   background-repeat no-repeat
   height 100%
+#code
+  background-color tertiary
+  min-height 100%
+  h2
+    font-family Consolas, Menlo, Monaco, monospace
+  img
+    width auto
+    height 100px
+#code-content
+  margin-top 80px
+
 /**
   FOOTER
 */
 .footer
+  background-color secondary
+  font-size 1.1em
+  color black
   text-align center
   width 100%
   height 40px
+  p
+    margin 8px 0 0

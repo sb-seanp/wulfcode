@@ -12,7 +12,8 @@ import vinyl    from 'vinyl-source-stream';
 
 let paths = {
   css: './assets/stylesheets/*',
-  js: './assets/javascripts/*'
+  js: './assets/javascripts/*',
+  images: './assets/images/*'
 };
 
 gulp.task('stylesheets', () => {
@@ -51,7 +52,7 @@ gulp.task('serve', () => {
 gulp.task('watch', () => {
   gulp.watch(paths.css, ['stylesheets']);
   gulp.watch(paths.js, ['javascripts']);
+  gulp.watch(paths.images, ['images']);
 });
 
 gulp.task('default', ['stylesheets', 'javascripts', 'images', 'serve', 'watch']);
-gulp.task('imagemin', ['images']);
